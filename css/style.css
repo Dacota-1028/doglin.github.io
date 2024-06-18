@@ -1,0 +1,283 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: rgb(235, 235, 235);
+    font-size: 1.6rem;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+h1, h2, h3, a{
+    font-weight: 400;
+}
+
+img{
+    display: block;
+}
+
+.centrado {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Encabezado */
+
+.encabezado  {
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace{
+    margin: 2rem;
+}
+
+.a {
+    margin: 0 2rem;
+    border-bottom: solid 0.3rem transparent;
+}
+
+
+
+.a:hover{
+    border-bottom: solid 0.3rem;
+}
+
+
+/* IMG - Hero */
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: #DDD7D7;
+}
+
+.hero img{
+    height: 45rem;
+}
+
+/* Cursos */
+
+.cursos-contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+/*
+.cursos-contenedor article{
+    border: solid 0.1rem;
+}*/
+
+
+.etiqueta {
+    display: inline-block;
+    position: relative;
+    top: 5.0rem;
+    background-color: rgb(189, 13, 13);
+    color: #ffffff;
+    margin: 0 0 0 0;
+    font-family: "Signika";
+    font-weight: 600;
+    padding: 0.6rem;
+}
+
+.curso img{
+    width: 100%;
+}
+
+.nombre-curso{
+    height: 6rem;
+    font-size: 1.7rem;
+    margin: 1rem 0 0 0.5rem;
+    font-family: "Signika";
+    font-weight: 800;
+}
+
+.nombre-instructor{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: rgb(98, 98, 99);
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin: 0.5rem 0 1rem 0.5rem;
+}
+
+/* Estrellas */
+
+.puntuacion{
+    display: flex;
+}
+
+.calificacion-num{
+    margin: 0.8rem 0 0 1rem;
+    font-weight: 700;
+}
+
+.promocion {
+    margin: 0.5rem 0rem 0.5rem 0.6rem;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.oferta{
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #eceb98;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-family: "Signika";
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.oferta span{
+    font-family: "Montserrat";
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #6e0669;
+}
+
+/* BLOG */
+
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+
+/*
+.blog {
+    border: solid;
+}*/
+
+.img-blog{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.articulo{
+    background-color: #f8f8f8;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    
+
+}
+
+
+.titulo-blog{
+    height: 4rem;
+    font-family: "Signika";
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 1.7rem 0rem 0.5rem ;
+}
+
+
+.fecha-blog{
+    text-align: end;
+    font-family: "Signika";
+    margin: 0rem 1rem 0rem 0;
+    color: #6e6c6c;
+    font-size: 1.2rem;
+}
+
+.articulo:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    color: #000000;
+}
+
+/* FOOTER */
+
+/* /////////////////////////////////////////////////////////////// */
+
+
+/* FOOTER-BLOG */
+.conteneder-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #2d2f33;
+    color: #fff;
+}
+
+/* REDES-BLOG */
+
+.svg-footer{
+    border-right: #fff solid;
+    margin: 1.5rem 0 .7rem 2rem;
+
+}
+
+.svg-footer a{
+    width: 8rem;
+    display: inline-block;
+}
+
+/* SOBRE LA PÁGINA */
+.sobre-pagina{
+    text-align: left;
+    width: 25%;
+    margin: 0 10rem 0 10rem;
+}
+
+/* FOOTER - CONTENIDO */
+
+.footer-contenido nav{
+    width: 15rem;
+    height: auto;
+    transform: skewX(10deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contenido nav a{
+    background-color: #6e6c6c;
+    display: inline;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-blog nav{
+    width: 15rem;
+    height: auto;
+    transform: skewX(10deg);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-blog nav a{
+    background-color: #6e6c6c;
+    display: inline;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-blog nav a:first-child {
+    background-color: #6e0669;
+    color: #ffffff;
+  }
